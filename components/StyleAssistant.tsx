@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { getStyleAdvice } from '../services/geminiService';
+import { getStyleAdvice } from '../services/geminiService.ts';
 
 const StyleAssistant: React.FC = () => {
   const [input, setInput] = useState('');

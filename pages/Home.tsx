@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { PROFESSIONALS, SERVICES } from '../constants';
-import StyleAssistant from '../components/StyleAssistant';
+import { PROFESSIONALS, SERVICES } from '../constants.ts';
+import StyleAssistant from '../components/StyleAssistant.tsx';
 
 const Home: React.FC = () => {
   return (

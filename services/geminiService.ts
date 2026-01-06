@@ -1,10 +1,12 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export async function getStyleAdvice(prompt: string) {
   try {
+    // Inicialização movida para dentro da função para evitar erros de 'process is not defined' no carregamento do módulo
+    // e garantir que use a chave mais atualizada conforme as diretrizes.
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: prompt,

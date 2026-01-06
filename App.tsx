@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Booking from './pages/Booking';
-import { SERVICES, PROFESSIONALS } from './constants';
+import Layout from './components/Layout.tsx';
+import Home from './pages/Home.tsx';
+import Booking from './pages/Booking.tsx';
+import { SERVICES, PROFESSIONALS } from './constants.ts';
 
 const ServicesPage: React.FC = () => (
   <div className="max-w-7xl mx-auto px-4 py-12">

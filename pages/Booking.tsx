@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { SERVICES, PROFESSIONALS, BUSINESS_HOURS } from '../constants';
-import { BookingStep, Service, Professional } from '../types';
+import { SERVICES, PROFESSIONALS, BUSINESS_HOURS } from '../constants.ts';
+import { BookingStep, Service, Professional } from '../types.ts';
 
 const Booking: React.FC = () => {
   const [step, setStep] = useState<BookingStep>(BookingStep.SERVICE);
@@ -18,7 +18,6 @@ const Booking: React.FC = () => {
   };
 
   const handleFinish = () => {
-    // In a real app, send to backend
     alert(`Agendamento realizado com sucesso para ${userData.name}!`);
     window.location.hash = '/';
   };
